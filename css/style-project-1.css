@@ -38,12 +38,19 @@ p {
 .download a:first-child {
     background-color: hsl(171, 66%, 44%);
     margin-right: 10px;
+    box-shadow: 0 3px 20px 0px hsl(171, 66%, 44%);
+}
+.download a:first-child:hover {
+				background-color: hsl(171, 66%, 44%, 0.8);
 }
 .download a:last-child {
     background-color: hsl(233, 100%, 69%);
     margin-left: 10px;
+    box-shadow: 0 3px 20px 0px hsl(233, 100%, 69%);
 }
-
+.download a:last-child:hover {
+				background-color: hsl(233, 100%, 69%, 0.8);
+}
 .section-1 {
     background-image: url("../images/bg-header-desktop.png");
     text-align: center;
@@ -142,7 +149,8 @@ p {
     width: 100%;
 }
 .footer .container-2 .linkes {
-    width: 75%;
+    width: 30%;
+    font-size: 14px;
 }
 .footer .container-2 .linkes ul li{
     list-style: none;
@@ -153,12 +161,100 @@ p {
     width: calc(100% / 3);
     padding-top: 35px;
 }
+.footer .container-2 .linkes ul li:hover {
+				color: hsl(171, 66%, 44%);
+}
+.footer .media img:hover {
+				color: hsl(171, 66%, 44%);
+}
 .footer .container-2 .linkes ul {
     display: flex;
     height: 150px;
     flex-wrap: wrap;
     flex-direction: column;
 }
-.footer .media img{
-    margin-right: 20px;
+.footer .media img:nth-child(2){
+    margin: 0 20px;
+}
+@media(min-width: 320px) and (max-width: 1439px){
+    .container-1 {
+        max-width: 90%;
+    }
+    .container-2 {
+        max-width: 90%;
+        text-align: center;
+    }
+    .download {
+    				max-width: 300px;
+    				margin: auto;
+    }
+    .download a:first-child {
+        margin: 0 0 20px 0;
+        display: block;
+    }
+    .download a:last-child {
+        margin: 20px 0 0 0;
+        display: block;
+    }
+    .section-1 {
+    				background-image: url("../images/bg-header-mobile.png");
+    }
+    .section-2 .container-2 {
+        flex-wrap: wrap;
+    }
+    .section-2 .screen-1::before {
+        display: none;
+    }
+    .section-2 .screen-1 {
+    				position: static;
+    				width: 100%;
+    }
+    .section-2 .screen-1 img {
+        width: 100%;
+        margin: auto;
+    }
+    .section-2 .container-2 .info {
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .section-2 .container-2 .info .text {
+    				width: 320px;
+    }
+    .section-3 .container-2 img {
+        width: 100%;
+    }
+    .section-4 .icons {
+        flex-direction: column;
+        margin: 70px auto;
+        width: 250px;
+    }
+    .section-4 .companys {
+        flex-direction: column;
+        height: 500px
+    }
+    .footer {
+        height: auto;
+    }
+    .footer .container-2 {
+        flex-direction: column;
+    }
+    .footer .container-2 .linkes{
+        height: 169px;
+        margin-top: 29px;
+    }
+    .footer .container-2 .linkes ul {
+        flex-wrap: nowrap;
+    }
+    .footer .container-2 .linkes ul li {
+        margin-right: 0;
+        width: auto;
+        padding-top: 0;
+    }
+    .footer .container-2 .media {
+        margin-bottom: 20px;
+    }
+    .footer .container-2 .logo {
+        margin-top: 20px;
+    }
+    
 }
