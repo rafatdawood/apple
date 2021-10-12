@@ -165,7 +165,7 @@ p {
 				color: hsl(171, 66%, 44%);
 }
 .footer .media img:hover {
-				
+			filter: invert(58%) sepia(91%) saturate(350%) hue-rotate(121deg) brightness(89%) contrast(90%);	
 }
 .footer .container-2 .linkes ul {
     display: flex;
